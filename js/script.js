@@ -1,7 +1,7 @@
 //Define UI Element
 let searchBtn = document.querySelector("#searchBtn");
 let searchUser = document.querySelector("#searchUser");
-
+let ui = new UI();
 // Add Event Liteners
 
 searchBtn.addEventListener("click", (e) => {
@@ -15,7 +15,7 @@ searchBtn.addEventListener("click", (e) => {
         if(data.message=="Not Found"){
             //show Alert
         }else{
-            //show profile
+            ui.showProfile(data)
 
         };
 
